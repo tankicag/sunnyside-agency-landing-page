@@ -1,0 +1,42 @@
+:root {
+  --color-primary-main-red: #fe7867;
+  --color-primary-yellow: #fad400;
+  --color-primary-text-dark: #25564b; // Dark desaturated cyan (graphic design text)
+  --color-primary-text-dark-2: #19536b; // Dark blue (photography text)
+  --color-primary-footer: #458c7e;
+
+  --color-dark-desaturated-blue: #23303e;
+  --color-dark-grayish-blue: #5a636c;
+  -color-dark-grayish-blue: #818498;
+  --color-grayish-blue: #a7abae;
+  --color-white: #ffffff;
+}
+
+$bp-largest: 75em; //1200px (1200/16=75)
+$bp-large: 62.5em; //1000px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-very-small: 25em; //400px
+$bp-smallest: 19.75em; //360px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px 10px/16px(browser default)  = 62.5%
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  min-height: 100vh;
+}
