@@ -70,4 +70,12 @@ header {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.5rem;
-    font-size: 3.5rem; }
+    font-size: 5rem; }
+  .header__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; }
+    .header__icon img {
+      width: 30px;
+      height: 100px; }
