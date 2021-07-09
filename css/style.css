@@ -79,3 +79,33 @@ header {
     .header__icon img {
       width: 30px;
       height: 100px; }
+
+.brand {
+  display: flex; }
+  .brand__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 7rem 14rem; }
+    .brand__text-heading {
+      font-size: 3.5rem;
+      color: var(--color-dark-desaturated-blue);
+      padding-bottom: 3rem; }
+    .brand__text-maintext {
+      font-size: 1.5rem;
+      color: var(--color-dark-grayish-blue);
+      font-family: "Barlow", sans-serif;
+      line-height: 1.5;
+      padding-bottom: 3rem; }
+    .brand__text-link {
+      color: var(--color-dark-desaturated-blue);
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 1.2rem;
+      text-decoration: none; }
+      .brand__text-link::before {
+        content: "";
+        border-bottom: 4px solid red;
+        border-radius: 3px;
+        transform: translate(10px, 9px); }
