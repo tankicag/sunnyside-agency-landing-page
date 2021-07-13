@@ -115,6 +115,29 @@ header {
         background: var(--color-primary-yellow);
       }
     }
+
+    .red-text::before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 10rem;
+      background: #f7ddd8;
+      border-radius: 5px;
+      transform: translate(0px, 15px);
+      z-index: -1;
+      position: relative;
+    }
+
+    .red-text:hover::before {
+      width: 10rem;
+      background: var(--color-primary-main-red);
+    }
+  }
+
+  .audience {
+    &__text {
+      padding: 7rem 15rem;
+    }
   }
 
   &__photo {

@@ -126,6 +126,24 @@ header {
       .audience__text-link:hover::before {
         width: 10rem;
         background: var(--color-primary-yellow); }
+    .brand__text .red-text::before,
+    .audience__text .red-text::before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 10rem;
+      background: #f7ddd8;
+      border-radius: 5px;
+      transform: translate(0px, 15px);
+      z-index: -1;
+      position: relative; }
+    .brand__text .red-text:hover::before,
+    .audience__text .red-text:hover::before {
+      width: 10rem;
+      background: var(--color-primary-main-red); }
+  .brand .audience__text,
+  .audience .audience__text {
+    padding: 7rem 15rem; }
   .brand__photo,
   .audience__photo {
     width: 50%; }
