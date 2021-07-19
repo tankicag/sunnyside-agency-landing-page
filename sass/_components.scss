@@ -148,3 +148,47 @@ header {
     width: 100%;
   }
 }
+
+.design-photograpy {
+  display: flex;
+
+  margin-top: -2rem;
+  width: 100%;
+
+  &__design {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 18rem;
+    height: 51rem;
+    width: 50%;
+    color: var(--color-primary-text-dark);
+  }
+
+  &__photograpy {
+    background-image: url(/images/desktop/image-photography.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 20rem;
+    height: 51rem;
+    width: 50%;
+    color: var(--color-primary-text-dark-2);
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    margin-top: 30rem;
+    padding-bottom: 2.8rem;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    font-family: "Barlow", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
