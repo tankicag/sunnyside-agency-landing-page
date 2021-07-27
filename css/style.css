@@ -184,3 +184,45 @@ header {
     font-family: "Barlow", sans-serif;
     line-height: 1.5;
     text-align: center; }
+
+.testimonials__heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--color-grayish-blue);
+  letter-spacing: 0.5rem;
+  padding: 13rem 20rem;
+  text-align: center; }
+
+.testimonials__grid {
+  display: flex;
+  gap: 5rem; }
+  .testimonials__grid-item {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20rem; }
+
+.testimonials img {
+  border-radius: 50%;
+  width: 15%;
+  justify-content: center;
+  align-items: center; }
+
+.testimonials__text {
+  font-size: 1.5rem;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--color-dark-grayish-blue);
+  padding: 5rem; }
+
+.testimonials__name {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 1rem; }
+
+.testimonials__title {
+  font-size: 1.1rem;
+  font-family: "Barlow", sans-serif;
+  color: var(--color-dark-grayish-blue); }
