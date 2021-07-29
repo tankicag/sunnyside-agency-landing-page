@@ -238,7 +238,29 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .footer__logo {
-    padding: 5rem;
-    width: 20%; }
+  align-items: center;
+  padding: 5rem; }
+  .footer__menu {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    padding: 3rem 0 5rem 0; }
+    .footer__menu li,
+    .footer__menu a {
+      font-size: 1.5rem;
+      color: var(--color-primary-text-dark);
+      text-decoration: none;
+      font-family: "Barlow", sans-serif; }
+    .footer__menu li,
+    .footer__menu a:hover {
+      cursor: pointer;
+      color: #fff; }
+  .footer__contact {
+    list-style: none;
+    display: flex;
+    gap: 2rem; }
+    .footer__contact li,
+    .footer__contact a:hover {
+      cursor: pointer; }
+    .footer__contact svg:hover path {
+      fill: #fff; }

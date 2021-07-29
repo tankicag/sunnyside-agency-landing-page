@@ -265,9 +265,40 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem;
 
-  &__logo {
-    padding: 5rem;
-    width: 20%;
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    padding: 3rem 0 5rem 0;
+
+    li,
+    a {
+      font-size: 1.5rem;
+      color: var(--color-primary-text-dark);
+      text-decoration: none;
+      font-family: "Barlow", sans-serif;
+    }
+    li,
+    a:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  &__contact {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li,
+    a:hover {
+      cursor: pointer;
+    }
+
+    svg:hover path {
+      fill: #fff;
+    }
   }
 }
