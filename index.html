@@ -20,21 +20,15 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header>
       <div class="header">
         <div class="header__logo">
           <img src="/images/logo.svg" alt="" class="header__logo-img" />
+        </div>
+        <div class="header__mobile--logo">
+          <img src="/images/icon-hamburger.svg" alt="mobile-menu">
         </div>
         <div class="header__menu">
           <ul>
@@ -129,7 +123,7 @@
             </div>
           </div>
           <div class="testimonials__grid-item">
-            <img src="/images/image-thomas.jpg" alt="Emily" />
+            <img src="/images/image-thomas.jpg" alt="Thomas" />
             <p class="testimonials__text">
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
@@ -140,7 +134,7 @@
             </div>
           </div>
           <div class="testimonials__grid-item">
-            <img src="/images/image-jennie.jpg" alt="Emily" />
+            <img src="/images/image-jennie.jpg" alt="Jennie" />
             <p class="testimonials__text">
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
@@ -155,30 +149,50 @@
       <section class="gallery">
         <figure class="gallery__item gallery__item--1">
           <img
-            src="images/desktop/image-gallery-milkbottles.jpg"
+            srcset="
+              images/desktop/image-gallery-milkbottles.jpg  300w,
+              images/mobile/image-gallery-milkbottles.jpg  1000w
+            "
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="gallery-milkbottles"
             class="gallery__img"
-            alt="Milk bottles"
+            src="images/desktop/image-gallery-milkbottles.jpg"
           />
         </figure>
         <figure class="gallery__item gallery__item--2">
           <img
-            src="images/desktop/image-gallery-orange.jpg"
-            alt="Orange"
+            srcset="
+              images/desktop/image-gallery-orange.jpg  300w,
+              images/mobile/image-gallery-orange.jpg  1000w
+            "
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="gallery-orange"
             class="gallery__img"
+            src="images/desktop/image-gallery-orange.jpg"
           />
         </figure>
         <figure class="gallery__item gallery__item--3">
           <img
-            src="images/desktop/image-gallery-cone.jpg"
-            alt="Cone"
+            srcset="
+              images/desktop/image-gallery-cone.jpg  300w,
+              images/mobile/image-gallery-cone.jpg  1000w
+            "
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="gallery-cone"
             class="gallery__img"
+            src="images/desktop/image-gallery-cone.jpg"
           />
         </figure>
         <figure class="gallery__item gallery__item--4">
           <img
-            src="images/desktop/image-gallery-sugarcubes.jpg"
+            srcset="
+              images/desktop/image-gallery-sugarcubes.jpg  300w,
+              images/mobile/image-gallery-sugar-cubes.jpg 1000w
+            "
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="gallery-sugar-cubes"
             class="gallery__img"
-            alt="Sugar cubes"
+            src="images/desktop/image-gallery-sugarcubes.jpg"
           />
         </figure>
       </section>
@@ -244,13 +258,5 @@
         </li>
       </ul>
     </footer>
-    <!-- About Services Projects Contact
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </body>
 </html>

@@ -79,6 +79,8 @@ header {
     .header__icon img {
       width: 30px;
       height: 100px; }
+  .header__mobile--logo {
+    display: none; }
 
 .brand,
 .audience {
