@@ -82,39 +82,48 @@ header {
   .header__mobile--logo {
     display: none; }
 
-.brand,
-.audience {
+.brand {
   display: flex; }
-  .brand__text,
-  .audience__text {
+  @media only screen and (max-width: 56.25em) {
+    .brand {
+      display: flex;
+      flex-direction: column-reverse; } }
+  .brand__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 50%;
     padding: 7rem 16rem; }
-    .brand__text-heading,
-    .audience__text-heading {
+    @media only screen and (max-width: 56.25em) {
+      .brand__text {
+        align-items: center;
+        width: 100%;
+        padding: 7rem; } }
+    .brand__text-heading {
       font-size: 3.5rem;
       color: var(--color-dark-desaturated-blue);
       padding-bottom: 3rem; }
-    .brand__text-maintext,
-    .audience__text-maintext {
+      @media only screen and (max-width: 56.25em) {
+        .brand__text-heading {
+          text-align: center; } }
+    .brand__text-maintext {
       font-size: 1.5rem;
       color: var(--color-dark-grayish-blue);
       font-family: "Barlow", sans-serif;
       line-height: 1.5;
       padding-bottom: 3rem; }
-    .brand__text-link,
-    .audience__text-link {
+      @media only screen and (max-width: 56.25em) {
+        .brand__text-maintext {
+          text-align: center; } }
+    .brand__text-link {
       color: var(--color-dark-desaturated-blue);
       text-transform: uppercase;
       font-weight: 900;
       font-size: 1.2rem;
       text-decoration: none;
       text-align: center; }
-      .brand__text-link::before,
-      .audience__text-link::before {
+      .brand__text-link::before {
         content: "";
         display: block;
         height: 5px;
@@ -124,32 +133,78 @@ header {
         transform: translate(0px, 15px);
         z-index: -1;
         position: relative; }
-      .brand__text-link:hover::before,
-      .audience__text-link:hover::before {
+      .brand__text-link:hover::before {
         width: 10rem;
         background: var(--color-primary-yellow); }
-    .brand__text .red-text::before,
-    .audience__text .red-text::before {
-      content: "";
-      display: block;
-      height: 5px;
-      width: 10rem;
-      background: #f7ddd8;
-      border-radius: 5px;
-      transform: translate(0px, 15px);
-      z-index: -1;
-      position: relative; }
-    .brand__text .red-text:hover::before,
-    .audience__text .red-text:hover::before {
-      width: 10rem;
-      background: var(--color-primary-main-red); }
-  .brand .audience__text,
-  .audience .audience__text {
-    padding: 7rem 15rem; }
-  .brand__photo,
+  .brand__photo {
+    width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .brand__photo {
+        width: 100%; } }
+  .brand img {
+    width: 100%; }
+
+.audience {
+  display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .audience {
+      display: flex;
+      flex-direction: column; } }
+  .audience__text {
+    padding: 7rem 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 7rem 16rem; }
+    @media only screen and (max-width: 56.25em) {
+      .audience__text {
+        align-items: center;
+        width: 100%;
+        padding: 7rem; } }
+    .audience__text-heading {
+      font-size: 3.5rem;
+      color: var(--color-dark-desaturated-blue);
+      padding-bottom: 3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .audience__text-heading {
+          text-align: center; } }
+    .audience__text-maintext {
+      font-size: 1.5rem;
+      color: var(--color-dark-grayish-blue);
+      font-family: "Barlow", sans-serif;
+      line-height: 1.5;
+      padding-bottom: 3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .audience__text-maintext {
+          text-align: center; } }
+    .audience__text-link {
+      color: var(--color-dark-desaturated-blue);
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-align: center; }
+      .audience__text-link::before {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 10rem;
+        background: #f7ddd8;
+        border-radius: 5px;
+        transform: translate(0px, 15px);
+        z-index: -1;
+        position: relative; }
+      .audience__text-link:hover::before {
+        width: 10rem;
+        width: 10rem;
+        background: var(--color-primary-main-red); }
   .audience__photo {
     width: 50%; }
-  .brand img,
+    @media only screen and (max-width: 56.25em) {
+      .audience__photo {
+        width: 100%; } }
   .audience img {
     width: 100%; }
 
@@ -157,6 +212,9 @@ header {
   display: flex;
   margin-top: -2rem;
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .design-photograpy {
+      flex-direction: column; } }
   .design-photograpy__design {
     background-image: url(/images/desktop/image-graphic-design.jpg);
     display: flex;
@@ -167,6 +225,12 @@ header {
     height: 51rem;
     width: 50%;
     color: var(--color-primary-text-dark); }
+    @media only screen and (max-width: 56.25em) {
+      .design-photograpy__design {
+        background-image: url(/images/mobile/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%; } }
   .design-photograpy__photograpy {
     background-image: url(/images/desktop/image-photography.jpg);
     display: flex;
@@ -177,6 +241,12 @@ header {
     height: 51rem;
     width: 50%;
     color: var(--color-primary-text-dark-2); }
+    @media only screen and (max-width: 56.25em) {
+      .design-photograpy__photograpy {
+        background-image: url(/images/mobile/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%; } }
   .design-photograpy__heading {
     font-size: 2.5rem;
     margin-top: 30rem;
