@@ -21,6 +21,10 @@ header {
       align-items: center;
       padding: 3rem;
 
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+
       li:last-child {
         a:last-child {
           text-transform: uppercase;
@@ -66,6 +70,10 @@ header {
 
   &__mobile--logo {
     display: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
   }
 }
 
@@ -259,6 +267,7 @@ header {
       background-image: url(/images/mobile/image-graphic-design.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+      padding: 0;
       width: 100%;
     }
   }
@@ -279,6 +288,7 @@ header {
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
+      padding: 0;
     }
   }
 
@@ -312,6 +322,9 @@ header {
     display: flex;
     gap: 5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
     &-item {
       flex-direction: column;
       display: flex;
@@ -353,6 +366,11 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &__img {
     object-fit: cover;

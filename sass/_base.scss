@@ -19,7 +19,6 @@ $bp-small: 37.5em; //600px
 $bp-very-small: 25em; //400px
 $bp-smallest: 19.75em; //360px
 
-
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +33,10 @@ $bp-smallest: 19.75em; //360px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px 10px/16px(browser default)  = 62.5%
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 71.4%;
+  }
 }
 
 body {
