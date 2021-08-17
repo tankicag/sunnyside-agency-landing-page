@@ -78,6 +78,9 @@ header {
     text-align: center;
     letter-spacing: 0.5rem;
     font-size: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__heading {
+        font-size: 2.5rem; } }
   .header__icon {
     display: flex;
     justify-content: center;
@@ -96,7 +99,6 @@ header {
   display: flex; }
   @media only screen and (max-width: 56.25em) {
     .brand {
-      display: flex;
       flex-direction: column-reverse; } }
   .brand__text {
     display: flex;
@@ -138,13 +140,15 @@ header {
         display: block;
         height: 5px;
         width: 10rem;
-        background: #f8efb3;
         border-radius: 5px;
         transform: translate(0px, 15px);
         z-index: -1;
         position: relative; }
       .brand__text-link:hover::before {
-        width: 10rem;
+        width: 10rem; }
+      .brand__text-link::before {
+        background: #f8efb3; }
+      .brand__text-link:hover::before {
         background: var(--color-primary-yellow); }
   .brand__photo {
     width: 50%; }
@@ -201,14 +205,15 @@ header {
         display: block;
         height: 5px;
         width: 10rem;
-        background: #f7ddd8;
         border-radius: 5px;
         transform: translate(0px, 15px);
         z-index: -1;
         position: relative; }
       .audience__text-link:hover::before {
-        width: 10rem;
-        width: 10rem;
+        width: 10rem; }
+      .audience__text-link::before {
+        background: #f7ddd8; }
+      .audience__text-link:hover::before {
         background: var(--color-primary-main-red); }
   .audience__photo {
     width: 50%; }

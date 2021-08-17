@@ -1,3 +1,27 @@
+@mixin brand_audience {
+  color: var(--color-dark-desaturated-blue);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+
+        &::before {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 10rem;
+        border-radius: 5px;
+        transform: translate(0px, 15px);
+        z-index: -1;
+        position: relative;
+        }
+        &:hover::before {
+        width: 10rem;
+        }
+}
+
+
 header {
   height: 100vh;
   background-image: url(../images/desktop/image-header.jpg);
@@ -54,6 +78,11 @@ header {
     text-align: center;
     letter-spacing: 0.5rem;
     font-size: 5rem;
+
+    
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.5rem;
+    }
   }
 
   &__icon {
@@ -81,7 +110,6 @@ header {
   display: flex;
 
   @media only screen and (max-width: $bp-medium) {
-    display: flex;
     flex-direction: column-reverse;
   }
 
@@ -122,26 +150,13 @@ header {
     }
 
     &-link {
-      color: var(--color-dark-desaturated-blue);
-      text-transform: uppercase;
-      font-weight: 900;
-      font-size: 1.2rem;
-      text-decoration: none;
-      text-align: center;
+      @include brand_audience;
 
       &::before {
-        content: "";
-        display: block;
-        height: 5px;
-        width: 10rem;
         background: #f8efb3;
-        border-radius: 5px;
-        transform: translate(0px, 15px);
-        z-index: -1;
-        position: relative;
+
       }
       &:hover::before {
-        width: 10rem;
         background: var(--color-primary-yellow);
       }
     }
@@ -204,27 +219,12 @@ header {
     }
 
     &-link {
-      color: var(--color-dark-desaturated-blue);
-      text-transform: uppercase;
-      font-weight: 900;
-      font-size: 1.2rem;
-      text-decoration: none;
-      text-align: center;
+      @include brand_audience;
 
       &::before {
-        content: "";
-        display: block;
-        height: 5px;
-        width: 10rem;
         background: #f7ddd8;
-        border-radius: 5px;
-        transform: translate(0px, 15px);
-        z-index: -1;
-        position: relative;
       }
       &:hover::before {
-        width: 10rem;
-        width: 10rem;
         background: var(--color-primary-main-red);
       }
     }
